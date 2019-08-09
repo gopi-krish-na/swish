@@ -1,2 +1,16 @@
-hchc
-hj
+#include <iostream>
+#include <cstdio>
+using namespace std;
+
+int main() {
+    int X,P,cost=0;
+    cin>>X>>P;
+    P=100-P;
+    while(X>0)
+    {
+        cost=cost+X;
+        X=(P*X)/100;
+    }
+    cout<<cost;
+    return 0;
+}
